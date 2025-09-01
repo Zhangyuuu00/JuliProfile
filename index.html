@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建筑设计作品集 | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-subtitle">设计是一种生活态度</span>
+                    <span class="logo-name">Designing is living.</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#portfolio" class="nav-link">
+                    <span class="nav-text-cn">作品集</span>
+                    <span class="nav-text-en">Portfolio</span>
+                </a></li>
+                <li><a href="#about" class="nav-link">
+                    <span class="nav-text-cn">关于我</span>
+                    <span class="nav-text-en">About</span>
+                </a></li>
+                <li><a href="#contact" class="nav-link">
+                    <span class="nav-text-cn">联系</span>
+                    <span class="nav-text-en">Contact</span>
+                </a></li>
+                <li><a href="#ai-chat" class="nav-link">
+                    <span class="nav-text-cn">AI助手</span>
+                    <span class="nav-text-en">AI Chat</span>
+                </a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页/封面 -->
+    <section id="home" class="hero">
+        <!-- 轮播图容器 -->
+        <div class="hero-carousel" id="heroCarousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active" data-index="0">
+                    <img src="模型2.jpg" alt="建筑设计作品2">
+                    <div class="carousel-overlay">
+                        <h3>漫游园<br><span class="subtitle">——可交互式建筑游戏设计</span></h3>
+                        <p>南京红山动物园河马馆创意设计</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="1">
+                    <img src="Enscape_2025-04-18-12-18-40.png" alt="建筑设计作品1">
+                    <div class="carousel-overlay">
+                        <h3>Bâtir avec la grammaire de la Terre<br><span class="subtitle">——法国乡村校舍重建</span></h3>
+                        <p>因地制宜利用当地夯土技术重建文化建筑</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="2">
+                    <img src="IMG_4311.JPG" alt="建筑设计作品3">
+                    <div class="carousel-overlay">
+                        <h3>绿方计划<br><span class="subtitle">——遗址改造办公综合体设计</span></h3>
+                        <p>办公建筑与创意市集的融合</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="3">
+                    <img src="popup/BC - Xi'an SKP Pop-Up Design Scheme_34.jpg" alt="建筑设计作品4">
+                    <div class="carousel-overlay">
+                        <h3>SHEAF WEAVE</h3>
+                        <p>奢侈品牌快闪店设计</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="4">
+                    <img src="2.png" alt="建筑设计作品5">
+                    <div class="carousel-overlay">
+                        <h3>GROWING VINE<br><span class="subtitle">——滨海片区更新设计</span></h3>
+                        <p>工业遗址更新与生态修复</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="5">
+                    <img src="HighresScreenshot_2024.12.18-05.24.45.png" alt="建筑设计作品6">
+                    <div class="carousel-overlay">
+                        <h3>漫游园<br><span class="subtitle">——可交互式建筑游戏设计</span></h3>
+                        <p>创新思维与空间美学</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 轮播图控制按钮 -->
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- 轮播图指示器 -->
+            <div class="carousel-indicators" id="carouselIndicators">
+                <span class="indicator active" data-index="0"></span>
+                <span class="indicator" data-index="1"></span>
+                <span class="indicator" data-index="2"></span>
+                <span class="indicator" data-index="3"></span>
+                <span class="indicator" data-index="4"></span>
+                <span class="indicator" data-index="5"></span>
+            </div>
+        </div>
+        
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" id="heroName">Juli</h1>
+            <p class="hero-subtitle" id="heroTitle">建筑/家具设计师 | 玩转空间，探索设计的无限可能</p>
+            <p class="hero-subtitle-secondary" id="heroSubtitle">专注于可持续设计、空间叙事与多维创意设计</p>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>向下滚动</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">作品集</h2>
+            <p class="section-subtitle">探索设计的多维可能性，从建筑空间到产品细节，从平面艺术到创意表达</p>
+            
+            <!-- 作品集分类导航 -->
+            <div class="portfolio-categories">
+                <button class="category-btn active" data-category="all">全部作品</button>
+                <button class="category-btn" data-category="建筑与室内设计">建筑与室内设计</button>
+                <button class="category-btn" data-category="家具与产品设计">家具与产品设计</button>
+                <button class="category-btn" data-category="艺术与平面设计">艺术与平面设计</button>
+                <button class="category-btn" data-category="ai-exploration">AI探索</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item architecture" data-project="project1" data-category="建筑与室内设计">
+                    <div class="portfolio-image">
+                        <img src="模型2.jpg" alt="漫游园">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>漫游园<br><span class="subtitle">——可交互式建筑游戏设计</span></h3>
+                        <p>住宅设计 · 可持续建筑</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="project2" data-category="建筑与室内设计">
+                    <div class="portfolio-image">
+                        <img src="Enscape_2025-04-18-12-18-40(1).png" alt="Bâtir avec la grammaire de la Terre——法国乡村校舍重建">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Bâtir avec la grammaire de la Terre<br><span class="subtitle">——法国乡村校舍重建</span></h3>
+                        <p>国际建筑竞赛 · 乡村建筑</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="project3" data-category="建筑与室内设计">
+                    <div class="portfolio-image">
+                        <img src="2(1).png" alt="滨海片区改造设计">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>GROWING VINE<br><span class="subtitle">——滨海片区更新设计</span></h3>
+                        <p>工业遗址更新与生态修复</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="project4" data-category="建筑与室内设计">
+                    <div class="portfolio-image">
+                        <img src="IMG_4311.JPG" alt="绿方计划">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>绿方计划<br><span class="subtitle">——遗址改造办公综合体设计</span></h3>
+                        <p>办公建筑与创意市集的融合</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="project5" data-category="建筑与室内设计">
+                    <div class="portfolio-image">
+                        <img src="popup/BC - Xi'an SKP Pop-Up Design Scheme_33(1).jpg" alt="SHEAF WEAVE">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>SHEAF WEAVE<br><span class="subtitle">——奢侈品牌快闪店设计</span></h3>
+                        <p>零售空间 · 快闪店设计</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="project6" data-category="家具与产品设计">
+                    <div class="portfolio-image">
+                        <img src="no6/07(1).jpg" alt="VALLEY CHAIR 猫窝椅">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>VALLEY CHAIR 猫窝椅<br><span class="subtitle">——人宠共用家具设计</span></h3>
+                        <p>家具设计 · 产品设计</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="project7" data-category="家具与产品设计">
+                    <div class="portfolio-image">
+                        <img src="no7/9.jpg" alt="光厦">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>光厦<br><span class="subtitle">——氛围灯设计</span></h3>
+                        <p>灯具设计 · 产品设计</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="project8" data-category="家具与产品设计">
+                    <div class="portfolio-image">
+                        <img src="no8/海报正面(1).jpg" alt="GAMESEAT猫游戏椅">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>GAMESEAT猫游戏椅<br><span class="subtitle">——宠物家具系列设计</span></h3>
+                        <p>家具设计 · 产品设计</p>
+                    </div>
+                </div>
+                
+                <!-- 第九个项目 -->
+                <div class="portfolio-item" data-project="project9" data-category="艺术与平面设计">
+                    <div class="portfolio-image">
+                        <img src="no9/微信图片_20250831155908_38_4.jpg" alt="其他创意设计">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>其他创意设计</h3>
+                        <p>创意设计 · 多元化探索</p>
+                    </div>
+                </div>
+                
+                <!-- AI探索模块 -->
+                <div class="portfolio-item ai-exploration" data-project="project10" data-category="ai-exploration">
+                    <div class="portfolio-image">
+                        <img src="生成学习 AI 思维导图 (1).png" alt="AI Learning Mind Map">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>AI Learning Mind Map</h3>
+                        <p>AI探索 · 学习思维导图</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item ai-exploration" data-project="project11" data-category="ai-exploration">
+                    <div class="portfolio-image">
+                        <img src="生成学习 AI 思维导图 (2).png" alt="AI词库学习簿">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>AI词库学习簿</h3>
+                        <p>AI探索 · 词库管理系统</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="webwxgetmsgimg (1).jfif" alt="Juli个人照片">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">关于我</h2>
+                    <p class="about-description">
+                        我是一名对设计与生活充满热情的建筑设计师，专注于探索空间的无限可能。我曾就读于华南理工大学工业设计、建筑设计专业，在绿色建筑专门化方向学习，所有专业设计课程均为年级优秀，曾获国家奖学金以及数十项国际建筑设计竞赛大奖。
+                    </p>
+                    <p class="about-description">
+                        通过推免保研至同济大学后，除了建筑设计以外，我还热衷于探索家具设计、游戏设计、平面设计等等方面。我相信，创意来源也应用于每时每刻的生活，而我的设计热情也绝不止于其中一项，我将持续运用AI技术与各类软件探索一切未知的设计可能。
+                    </p>
+                    
+                    <div class="resume-highlights">
+                        <h3>简历亮点</h3>
+                        <div class="highlights-grid">
+                            <div class="highlight-item">
+                                <h4>教育背景</h4>
+                                <p id="educationSchool">XX大学 建筑设计专业</p>
+                                <p id="educationYear">2020-2024</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>技能专长</h4>
+                                <p id="skillsSoftware">Rhino, Grasshopper, AutoCAD</p>
+                                <p id="skillsDesign">SketchUp, Lumion, Photoshop</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>获奖情况（部分）</h4>
+                                <p id="awardsList">XX建筑设计竞赛 一等奖</p>
+                                <p id="awardsMore">XX大学优秀毕业生</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>实践经历</h4>
+                                <p id="experienceCompany">XX建筑设计事务所</p>
+                                <p id="experiencePosition">建筑设计师</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>语言能力</h4>
+                                <p id="languagesList">中文（母语）、英语（流利）</p>
+                                <p id="languagesMore">日语（基础）</p>
+                            </div>
+                        </div>
+                        <a href="#" class="download-cv" onclick="console.log('原有链接被点击'); handleDownloadClick(event);">下载完整简历</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item" onclick="copyToClipboard('email')">
+                        <i class="fas fa-envelope"></i>
+                        <span id="contactEmail">your.email@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.xiaohongshu.com/user/profile/5b754bb5f7e8b97d8557d8cb?xsec_token=YBsJIEVBrDrPciwawOD1HyfC_w8wN5_rODaUYAvONeRYc=&xsec_source=app_share&xhsshare=CopyLink&appuid=5b754bb5f7e8b97d8557d8cb&apptime=1756753984&share_id=23720e5f5a8c46a19d004e7a8ecd772d" target="_blank" id="contactXiaohongshu">小红书: Juli设计</a>
+                    </div>
+                    <div class="contact-item" onclick="copyToClipboard('wechat')">
+                        <i class="fab fa-weixin"></i>
+                        <span id="contactWechat">微信号：Juli00018</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span id="contactLocation">北京</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI对话界面 -->
+    <section id="ai-chat" class="ai-chat">
+        <div class="container">
+            <h2 class="section-title">AI助手</h2>
+            <p class="section-subtitle">与AI助手对话，了解更多关于我的设计理念和作品</p>
+            
+            <div class="chat-container">
+                <!-- 遮罩层 -->
+                <div class="chat-overlay" id="chatOverlay"></div>
+                
+                <!-- 历史记录侧边栏 -->
+                <div class="chat-sidebar" id="chatSidebar">
+                    <div class="sidebar-header">
+                        <h3>对话历史</h3>
+                        <button class="sidebar-toggle" id="sidebarToggle">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="search-container">
+                        <div class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input type="text" class="search-input" id="searchInput" placeholder="搜索对话内容...">
+                    </div>
+                    
+                    <div class="history-list" id="historyList">
+                        <!-- 历史记录将通过JavaScript动态生成 -->
+                    </div>
+                    
+                    <div class="sidebar-footer">
+                        <button class="clear-history" id="clearHistory">
+                            <i class="fas fa-trash"></i>
+                            清空历史
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 主聊天区域 -->
+                <div class="chat-main">
+                    <div class="chat-header">
+                        <button class="history-toggle" id="historyToggle" title="查看对话历史">
+                            <i class="fas fa-history"></i>
+                        </button>
+                        <h3>AI设计师助手</h3>
+                        <button class="new-chat" id="newChat">
+                            <i class="fas fa-plus"></i>
+                            新对话
+                        </button>
+                    </div>
+                    
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message ai-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <p>你好！我是设计师的AI助手，很高兴为你介绍Juli的作品和理念。你可以问我任何关于建筑设计、作品集或者设计师背景的问题。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 回到当前对话按钮 -->
+                    <button class="back-to-current-btn" id="backToCurrentBtn" style="display: none;">
+                        <i class="fas fa-arrow-left"></i>
+                        回到当前对话
+                    </button>
+                    
+                    <div class="chat-input-container">
+                        <input type="text" id="chatInput" placeholder="输入你的问题..." maxlength="500">
+                        <button id="sendMessage" class="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Juli Design 用设计创造无限可能</p>
+                <div class="social-links">
+                    <a href="mailto:your.email@example.com" title="邮箱">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.xiaohongshu.com/user/profile/5b754bb5f7e8b97d8557d8cb?xsec_token=YBsJIEVBrDrPciwawOD1HyfE_rQqSqfEkr8fgAwNfj5TI=&xsec_source=app_share&xhsshare=CopyLink&appuid=5b754bb5f7e8b97d8557d8cb&apptime=1756114829&share_id=532fd38b4e98448da149994538e2a1fe" title="小红书" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-book-open"></i>
+                    </a>
+                    <a href="#" title="微信">
+                        <i class="fab fa-weixin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 项目详情模态框 -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            
+            <!-- 图片轮播区域 -->
+            <div class="project-gallery-fullscreen">
+                <div class="gallery-main">
+                    <img id="mainImage" src="" alt="项目图片">
+                    
+                    <!-- 左右切换按钮 -->
+                    <button class="gallery-nav-btn gallery-prev-btn" id="galleryPrevBtn" title="上一张">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="gallery-nav-btn gallery-next-btn" id="galleryNextBtn" title="下一张">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="gallery-thumbnails" id="galleryThumbnails">
+                    <!-- 缩略图将通过JavaScript动态生成 -->
+                </div>
+                
+                <!-- 项目信息按钮 -->
+                <button class="info-toggle-btn" id="infoToggleBtn">
+                    <i class="fas fa-info-circle"></i>
+                    <span>项目信息</span>
+                </button>
+            </div>
+            
+            <!-- 项目信息侧边栏 -->
+            <div class="project-info-sidebar" id="projectInfoSidebar">
+                <div class="sidebar-header">
+                    <h2 id="projectTitle" class="project-title-header"></h2>
+                    <button class="sidebar-close" id="sidebarClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="project-content">
+                    <!-- 左侧栏：项目元数据 -->
+                    <div class="project-left-column">
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <span class="label">项目标签</span>
+                                <div id="projectTags" class="project-tags"></div>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">项目类型</span>
+                                <span id="projectType"></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">地点</span>
+                                <span id="projectLocation"></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">时间</span>
+                                <span id="projectDate"></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="label">角色</span>
+                                <span id="projectRole"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 右侧栏：项目描述和详情 -->
+                    <div class="project-right-column">
+                        <div class="project-description">
+                            <h3>设计理念</h3>
+                            <p id="projectConcept"></p>
+                        </div>
+                        
+                        <div class="project-details">
+                            <div class="detail-section">
+                                <h3>技术参数</h3>
+                                <p id="projectSoftware"></p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3>项目规模</h3>
+                                <p id="projectScale"></p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3>设计亮点</h3>
+                                <p id="projectHighlights"></p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3>设计挑战</h3>
+                                <p id="projectChallenges"></p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h3>解决方案</h3>
+                                <p id="projectSolutions"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
